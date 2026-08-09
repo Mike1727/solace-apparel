@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solace Apparel — Weather-Adaptive Streetwear, Los Angeles</title>
+<meta name="description" content="Solace Apparel designs functional, weather-adaptive streetwear from Los Angeles. Technical outerwear, utility accessories, and limited seasonal drops built to move with you.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23111111%22/><text x=%2250%22 y=%2268%22 font-family=%22Arial%22 font-weight=%22900%22 font-size=%2260%22 fill=%22%23e8622c%22 text-anchor=%22middle%22>S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="wordmark">SOLACE<span class="wordmark-dot">.</span></a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="#categories">Men</a>
+      <a href="#categories">Women</a>
+      <a href="#categories">Accessories</a>
+      <a href="#categories">Customise</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="cartBtn" type="button" aria-label="View cart, 0 items">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <svg class="hero-lines" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,120 C300,220 900,20 1200,140" stroke="#e8622c" stroke-width="1.5" fill="none" opacity="0.35"/>
+      <path d="M0,680 C350,560 850,780 1200,660" stroke="#111111" stroke-width="1" fill="none" opacity="0.12"/>
+      <circle cx="1080" cy="130" r="70" stroke="#111111" stroke-width="1" fill="none" opacity="0.15"/>
+    </svg>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Est. 2016 &mdash; Los Angeles, CA</p>
+        <h1 class="hero-title">FUNCTION<br>IS THE<br><span class="accent-text">FORM.</span></h1>
+        <p class="hero-sub">Weather-adaptive streetwear engineered in the studio and tested on the street. No noise, no logos-for-logos&rsquo;-sake &mdash; just clean silhouettes built to survive a Tuesday commute and a Tuesday storm.</p>
+        <div class="hero-cta-row">
+          <a href="#collection" class="btn btn-primary">Shop the Collection</a>
+          <a href="#lookbook" class="btn btn-ghost">View Lookbook</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 400 520" class="silhouette">
+            <defs>
+              <linearGradient id="duotone" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#1a1a1a"/>
+                <stop offset="55%" stop-color="#e8622c"/>
+                <stop offset="100%" stop-color="#2b2b2b"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="400" height="520" rx="24" fill="url(#duotone)"/>
+            <path d="M200 70c-30 0-52 20-52 48 0 20 12 34 12 34l-58 26c-14 6-22 20-22 36v210c0 12 10 22 22 22h196c12 0 22-10 22-22V214c0-16-8-30-22-36l-58-26s12-14 12-34c0-28-22-48-52-48z" fill="#0d0d0d" opacity="0.55"/>
+            <path d="M150 168l-40 190M250 168l40 190" stroke="#fafafa" stroke-width="2" opacity="0.35"/>
+          </svg>
+        </div>
+
+        <div class="product-panel" aria-label="Featured product">
+          <p class="panel-sku">SKU SOL-VJ-001</p>
+          <h2 class="panel-name">Voyager Shell Jacket</h2>
+          <p class="panel-price">$328.00</p>
+          <div class="panel-swatches" role="group" aria-label="Choose colour">
+            <button class="swatch swatch-onyx is-active" type="button" aria-label="Onyx Black" data-color="Onyx Black"></button>
+            <button class="swatch swatch-fog" type="button" aria-label="Fog Grey" data-color="Fog Grey"></button>
+            <button class="swatch swatch-rust" type="button" aria-label="Rust" data-color="Rust"></button>
+          </div>
+          <p class="panel-color-label">Colour: <span id="panelColorLabel">Onyx Black</span></p>
+          <div class="panel-actions">
+            <button class="btn btn-primary btn-small add-to-cart" type="button" data-name="Voyager Shell Jacket" data-price="328.00">Add to Cart</button>
+            <button class="btn btn-outline btn-small quick-view" type="button" data-name="Voyager Shell Jacket" data-price="328.00" data-sku="SOL-VJ-001" data-desc="A 3-layer weatherproof shell in recycled ripstop nylon, taped seams, and a packable hood. Built for the exact moment the sky changes its mind.">Quick View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY NAV -->
+  <section class="categories" id="categories">
+    <div class="section-head">
+      <p class="eyebrow">Shop by category</p>
+      <h2 class="section-title">Four ways in.</h2>
+    </div>
+    <div class="category-grid">
+      <a class="category-card cat-men" href="#collection">
+        <span class="category-name">Men</span>
+        <span class="category-sub">Outerwear &amp; utility</span>
+      </a>
+      <a class="category-card cat-women" href="#collection">
+        <span class="category-name">Women</span>
+        <span class="category-sub">Structured essentials</span>
+      </a>
+      <a class="category-card cat-accessories" href="#collection">
+        <span class="category-name">Accessories</span>
+        <span class="category-sub">Bags, masks, small goods</span>
+      </a>
+      <a class="category-card cat-customise" href="#collection">
+        <span class="category-name">Customise</span>
+        <span class="category-sub">Make it yours</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURED COLLECTION -->
+  <section class="collection" id="collection">
+    <div class="section-head">
+      <p class="eyebrow">Drop 014 &mdash; Concrete &amp; Fog</p>
+      <h2 class="section-title">Featured Collection</h2>
+      <p class="section-desc">Eight pieces, four categories, one wardrobe. Every item below ships from our Los Angeles studio in small, numbered batches.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+        <div class="product-media grad-1">
+          <span class="tag">Best Seller</span>
+          <svg viewBox="0 0 200 260" class="mini-silhouette" aria-hidden="true"><path d="M100 30c-18 0-30 12-30 28 0 12 7 20 7 20l-34 15c-8 4-13 12-13 21v120c0 7 6 13 13 13h114c7 0 13-6 13-13V114c0-9-5-17-13-21l-34-15s7-8 7-20c0-16-12-28-30-28z" fill="#0d0d0d" opacity=".5"/></svg>
+        </div>
+        <div class="product-info">
+          <h3>Voyager Shell Jacket</h3>
+          <p class="product-cat">Men &middot; Outerwear</p>
+          <p class="product-desc">3-layer recycled ripstop shell, taped seams, packable hood. Onyx Black, Fog Grey, Rust.</p>
+          <div class="product-row">
+            <span class="product-price">$328.00</span>
+            <div class="product-btns">
+              <button class="btn btn-outline btn-small quick-view" data-name="Voyager Shell Jacket" data-price="328.00" data-sku="SOL-VJ-001" data-desc="A 3-layer weatherproof shell in recycled ripstop nylon, taped seams, and a packable hood. Built for the exact moment the sky changes its mind.">Quick View</button>
+              <button class="btn btn-primary btn-small add-to-cart" data-name="Voyager Shell Jacket" data-price="328.00">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media grad-2">
+          <svg viewBox="0 0 200 260" class="mini-silhouette" aria-hidden="true"><path d="M70 40h60l6 90-4 100h-24l-8-90-8 90H68l-4-100z" fill="#0d0d0d" opacity=".5"/></svg>
+        </div>
+        <div class="product-info">
+          <h3>Utility Cargo Pant</h3>
+          <p class="product-cat">Men &middot; Bottoms</p>
+          <p class="product-desc">Stretch cotton twill with articulated knees and six pockets. Black, Olive.</p>
+          <div class="product-row">
+            <span class="product-price">$168.00</span>
+            <div class="product-btns">
+              <button class="btn btn-outline btn-small quick-view" data-name="Utility Cargo Pant" data-price="168.00" data-sku="SOL-CP-014" data-desc="Stretch cotton-twill cargo pant with articulated knees, six utility pockets, and a hidden internal drawcord for a clean waist line.">Quick View</button>
+              <button class="btn btn-primary btn-small add-to-cart" data-name="Utility Cargo Pant" data-price="168.00">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media grad-3">
+          <span class="tag">New</span>
+          <svg viewBox="0 0 200 260" class="mini-silhouette" aria-hidden="true"><path d="M100 20c-26 0-42 22-42 40l10 30-16 10 8 130h80l8-130-16-10 10-30c0-18-16-40-42-40z" fill="#0d0d0d" opacity=".5"/></svg>
+        </div>
+        <div class="product-info">
+          <h3>Drift Wrap Coat</h3>
+          <p class="product-cat">Women &middot; Outerwear</p>
+          <p class="product-desc">Oversized wool-blend wrap coat with a storm collar and belt closure. Bone, Charcoal.</p>
+          <div class="product-row">
+            <span class="product-price">$298.00</span>
+            <div class="product-btns">
+              <button class="btn btn-outline btn-small quick-view" data-name="Drift Wrap Coat" data-price="298.00" data-sku="SOL-DW-022" data-desc="Oversized wool-blend wrap coat with a storm collar, interior belt closure, and dropped shoulder seam for a relaxed drape.">Quick View</button>
+              <button class="btn btn-primary btn-small add-to-cart" data-name="Drift Wrap Coat" data-price="298.00">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media grad-4">
+          <svg viewBox="0 0 200 260" class="mini-silhouette" aria-hidden="true"><path d="M85 40h30l4 190h-38z" fill="#0d0d0d" opacity=".5"/></svg>
+        </div>
+        <div class="product-info">
+          <h3>Contour Seamless Legging</h3>
+          <p class="product-cat">Women &middot; Bottoms</p>
+          <p class="product-desc">Four-way stretch compression knit with a high-rise waistband. Black, Clay.</p>
+          <div class="product-row">
+            <span class="product-price">$118.00</span>
+            <div class="product-btns">
+              <button class="btn btn-outline btn-small quick-view" data-name="Contour Seamless Legging" data-price="118.00" data-sku="SOL-CL-009" data-desc="Four-way stretch compression knit legging with a high-rise waistband and flat-lock seams to eliminate chafing on long days.">Quick View</button>
+              <button class="btn btn-primary btn-small add-to-cart" data-name="Contour Seamless Legging" data-price="118.00">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media grad-5">
+          <svg viewBox="0 0 200 260" class="mini-silhouette" aria-hidden="true"><path d="M60 110c0-22 18-40 40-40s40 18 40 40v30c0 22-18 40-40 40s-40-18-40-40z" fill="#0d0d0d" opacity=".5"/></svg>
+        </div>
+        <div class="product-info">
+          <h3>Aperture Utility Mask</h3>
+          <p class="product-cat">Accessories</p>
+          <p class="product-desc">Adjustable neoprene face mask with a replaceable filter pocket. Black, Graphite.</p>
+          <div class="product-row">
+            <span class="product-price">$58.00</span>
+            <div class="product-btns">
+              <button class="btn btn-outline btn-small quick-view" data-name="Aperture Utility Mask" data-price="58.00" data-sku="SOL-AM-005" data-desc="Adjustable neoprene utility mask with a replaceable filter pocket and moulded nose bridge for a secure, breathable fit.">Quick View</button>
+              <button class="btn btn-primary btn-small add-to-cart" data-name="Aperture Utility Mask" data-price="58.00">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media grad-6">
+          <svg viewBox="0 0 200 260" class="mini-silhouette" aria-hidden="true"><rect x="55" y="70" width="90" height="110" rx="10" fill="#0d0d0d" opacity=".5"/></svg>
+        </div>
+        <div class="product-info">
+          <h3>Modular Sling Bag</h3>
+          <p class="product-cat">Accessories</p>
+          <p class="product-desc">Water-resistant sling with a detachable pouch and magnetic strap buckle. Black, Sand.</p>
+          <div class="product-row">
+            <span class="product-price">$128.00</span>
+            <div class="product-btns">
+              <button class="btn btn-outline btn-small quick-view" data-name="Modular Sling Bag" data-price="128.00" data-sku="SOL-MS-031" data-desc="Water-resistant modular sling bag with a detachable zip pouch, magnetic strap buckle, and a padded laptop sleeve.">Quick View</button>
+              <button class="btn btn-primary btn-small add-to-cart" data-name="Modular Sling Bag" data-price="128.00">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media grad-7">
+          <span class="tag">Limited</span>
+          <svg viewBox="0 0 200 260" class="mini-silhouette" aria-hidden="true"><path d="M40 190c0-10 8-16 20-18l70-14 30 8c14 4 20 12 20 24v6H40z" fill="#0d0d0d" opacity=".5"/></svg>
+        </div>
+        <div class="product-info">
+          <h3>Glide Trainer 02</h3>
+          <p class="product-cat">Footwear</p>
+          <p class="product-desc">Knit upper trainer with a moulded EVA sole and reflective heel tab. Triple Black, Bone White.</p>
+          <div class="product-row">
+            <span class="product-price">$218.00</span>
+            <div class="product-btns">
+              <button class="btn btn-outline btn-small quick-view" data-name="Glide Trainer 02" data-price="218.00" data-sku="SOL-GT-002" data-desc="Seamless knit-upper trainer on a moulded EVA sole with a reflective heel tab, made in a limited run of 400 pairs per colourway.">Quick View</button>
+              <button class="btn btn-primary btn-small add-to-cart" data-name="Glide Trainer 02" data-price="218.00">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media grad-8">
+          <svg viewBox="0 0 200 260" class="mini-silhouette" aria-hidden="true"><path d="M70 40h60l10 20-10 10v130H70V70l-10-10z" fill="#0d0d0d" opacity=".5"/></svg>
+        </div>
+        <div class="product-info">
+          <h3>Solace Base Tee &mdash; Custom Print</h3>
+          <p class="product-cat">Customise</p>
+          <p class="product-desc">Heavyweight organic cotton tee with your choice of chest print placement. White, Black.</p>
+          <div class="product-row">
+            <span class="product-price">$68.00</span>
+            <div class="product-btns">
+              <button class="btn btn-outline btn-small quick-view" data-name="Solace Base Tee — Custom Print" data-price="68.00" data-sku="SOL-BT-CST" data-desc="Heavyweight 240gsm organic cotton tee. Choose a blank base, a small chest mark, or a full back print at checkout&mdash;each build ships in seven to ten days.">Quick View</button>
+              <button class="btn btn-primary btn-small add-to-cart" data-name="Solace Base Tee — Custom Print" data-price="68.00">Add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ABOUT / VALUES -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-copy">
+        <p class="eyebrow">Our story</p>
+        <h2 class="section-title">Built for the ten-minute walk between weather systems.</h2>
+        <p>Solace Apparel started in 2016 in a shared studio space in the Los Angeles Arts District, founded by two former outdoor-gear pattern cutters who were tired of choosing between clothes that looked good and clothes that worked. The idea was simple: streetwear silhouettes, built with the material logic of technical outerwear.</p>
+        <p>Every Solace piece starts with a question &mdash; what is this garment actually for? A jacket has to survive a sudden downpour on the walk to the train. A pant has to bend at the knee on a bike and still look right at a desk. We design backward from that use case, then strip away anything that doesn&rsquo;t earn its place. The result is a wardrobe that reads as minimal because it is minimal &mdash; every seam, pocket, and zipper pull is there on purpose.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="value-num">01</span>
+          <h3>Sustainability</h3>
+          <p>70% of our fabric library is recycled or deadstock, and every shell fabric is bluesign&reg;-approved. We publish our supply chain twice a year.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-num">02</span>
+          <h3>Quality Materials</h3>
+          <p>Japanese ripstop nylon, YKK zippers, and cotton milled in Portugal. We test every seam to 20,000 flex cycles before it ships.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-num">03</span>
+          <h3>Limited Drops</h3>
+          <p>We run four numbered drops a year in small batches. When a colourway sells out, it&rsquo;s gone &mdash; we don&rsquo;t restock for the sake of it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOOKBOOK -->
+  <section class="lookbook" id="lookbook">
+    <div class="section-head light">
+      <p class="eyebrow">FW26 Editorial</p>
+      <h2 class="section-title">Concrete &amp; Fog</h2>
+      <p class="section-desc">Shot on location in the Arts District at dawn, before the marine layer burns off. Six looks, one mood.</p>
+    </div>
+    <div class="lookbook-strip">
+      <figure class="look-frame look-a"><figcaption>Look 01 &mdash; Voyager Shell over Contour Legging</figcaption></figure>
+      <figure class="look-frame look-b"><figcaption>Look 02 &mdash; Drift Wrap Coat, Modular Sling</figcaption></figure>
+      <figure class="look-frame look-c"><figcaption>Look 03 &mdash; Utility Cargo, Aperture Mask</figcaption></figure>
+      <figure class="look-frame look-d"><figcaption>Look 04 &mdash; Glide Trainer 02, Base Tee</figcaption></figure>
+    </div>
+    <blockquote class="editorial-quote">&ldquo;We wanted six looks that felt like the city at 6am &mdash; grey, quiet, and about to change.&rdquo;<cite>&mdash; Mara Ilić, Creative Director</cite></blockquote>
+  </section>
+
+  <!-- SIZE GUIDE -->
+  <section class="size-guide" id="size-guide">
+    <div class="section-head">
+      <p class="eyebrow">Before you order</p>
+      <h2 class="section-title">Size Guide</h2>
+      <p class="section-desc">All measurements in centimetres, taken flat. Between sizes on outerwear? Size up for layering room.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Size</th><th scope="col">Chest / Bust</th><th scope="col">Waist</th><th scope="col">Hip</th><th scope="col">Recommended height</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">XS</th><td>84&ndash;88</td><td>66&ndash;70</td><td>88&ndash;92</td><td>158&ndash;165 cm</td></tr>
+          <tr><th scope="row">S</th><td>89&ndash;93</td><td>71&ndash;75</td><td>93&ndash;97</td><td>163&ndash;170 cm</td></tr>
+          <tr><th scope="row">M</th><td>94&ndash;98</td><td>76&ndash;80</td><td>98&ndash;102</td><td>168&ndash;175 cm</td></tr>
+          <tr><th scope="row">L</th><td>99&ndash;104</td><td>81&ndash;86</td><td>103&ndash;108</td><td>173&ndash;180 cm</td></tr>
+          <tr><th scope="row">XL</th><td>105&ndash;111</td><td>87&ndash;93</td><td>109&ndash;115</td><td>178&ndash;185 cm</td></tr>
+          <tr><th scope="row">XXL</th><td>112&ndash;119</td><td>94&ndash;101</td><td>116&ndash;123</td><td>183&ndash;190 cm</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <div>
+        <h2>Get the next drop first.</h2>
+        <p>Join the list for early access to limited colourways, restock alerts, and studio notes. No spam, unsubscribe any time.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <div class="field-group">
+          <label for="newsletterEmail" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletterEmail" name="newsletterEmail" placeholder="you@email.com" autocomplete="email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </div>
+        <p class="field-error" id="newsletterError" role="alert" aria-live="polite"></p>
+        <p class="field-success" id="newsletterSuccess" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT / STORE -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <p class="eyebrow">Visit or write to us</p>
+        <h2 class="section-title">Store &amp; Contact</h2>
+        <div class="store-block">
+          <h3>Flagship &mdash; Arts District</h3>
+          <p>428 Traction Ave, Los Angeles, CA 90013</p>
+          <p>Tue&ndash;Sat, 11:00&ndash;19:00 &middot; Sun 12:00&ndash;17:00 &middot; Closed Monday</p>
+        </div>
+        <div class="store-block">
+          <h3>General Enquiries</h3>
+          <p><a href="mailto:hello@solaceapparel.com">hello@solaceapparel.com</a></p>
+          <p><a href="tel:+13235550142">+1 (323) 555-0142</a></p>
+        </div>
+        <div class="store-block">
+          <h3>Wholesale &amp; Press</h3>
+          <p><a href="mailto:trade@solaceapparel.com">trade@solaceapparel.com</a></p>
+        </div>
+        <div class="map-block" aria-hidden="true">
+          <svg viewBox="0 0 300 160" class="map-lines">
+            <line x1="0" y1="30" x2="300" y2="30" stroke="#111" stroke-width="1" opacity=".18"/>
+            <line x1="0" y1="80" x2="300" y2="80" stroke="#111" stroke-width="1" opacity=".18"/>
+            <line x1="0" y1="130" x2="300" y2="130" stroke="#111" stroke-width="1" opacity=".18"/>
+            <line x1="60" y1="0" x2="60" y2="160" stroke="#111" stroke-width="1" opacity=".18"/>
+            <line x1="160" y1="0" x2="160" y2="160" stroke="#111" stroke-width="1" opacity=".18"/>
+            <line x1="240" y1="0" x2="240" y2="160" stroke="#111" stroke-width="1" opacity=".18"/>
+            <circle cx="160" cy="80" r="8" fill="#e8622c"/>
+            <circle cx="160" cy="80" r="16" fill="none" stroke="#e8622c" stroke-width="1.5" opacity=".5"/>
+          </svg>
+          <span class="map-label">Arts District Flagship</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <h3>Send us a message</h3>
+        <div class="form-row">
+          <label for="contactName">Full name</label>
+          <input type="text" id="contactName" name="contactName" required minlength="2" autocomplete="name">
+          <p class="field-error" data-error-for="contactName"></p>
+        </div>
+        <div class="form-row">
+          <label for="contactEmail">Email address</label>
+          <input type="email" id="contactEmail" name="contactEmail" required autocomplete="email">
+          <p class="field-error" data-error-for="contactEmail"></p>
+        </div>
+        <div class="form-row">
+          <label for="contactTopic">Topic</label>
+          <select id="contactTopic" name="contactTopic" required>
+            <option value="">Select a topic&hellip;</option>
+            <option value="order">Order support</option>
+            <option value="wholesale">Wholesale &amp; press</option>
+            <option value="sizing">Sizing help</option>
+            <option value="other">Something else</option>
+          </select>
+          <p class="field-error" data-error-for="contactTopic"></p>
+        </div>
+        <div class="form-row">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="contactMessage" rows="5" required minlength="10"></textarea>
+          <p class="field-error" data-error-for="contactMessage"></p>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="field-success" id="contactSuccess" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="wordmark">SOLACE<span class="wordmark-dot">.</span></span>
+      <p>Weather-adaptive streetwear, designed and shipped from Los Angeles, CA since 2016.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Shop</h4>
+        <a href="#categories">Men</a>
+        <a href="#categories">Women</a>
+        <a href="#categories">Accessories</a>
+        <a href="#categories">Customise</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#about">About</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#size-guide">Size Guide</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Solace Apparel Co. All rights reserved.</p>
+    <p>428 Traction Ave, Los Angeles, CA 90013</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="modal-overlay" id="quickViewOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="qvName">
+    <button class="modal-close" id="quickViewClose" type="button" aria-label="Close quick view">&times;</button>
+    <div class="modal-media" id="qvMedia" aria-hidden="true"></div>
+    <div class="modal-body">
+      <p class="panel-sku" id="qvSku"></p>
+      <h3 id="qvName"></h3>
+      <p class="panel-price" id="qvPrice"></p>
+      <p id="qvDesc"></p>
+      <button class="btn btn-primary" id="qvAddToCart" type="button">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
