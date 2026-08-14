@@ -68,7 +68,9 @@ function openQuickView(btn) {
   qvName.textContent = btn.dataset.name;
   qvPrice.textContent = `$${Number(btn.dataset.price).toFixed(2)}`;
   qvDesc.textContent = btn.dataset.desc;
-  qvMedia.style.background = getComputedStyle(btn.closest('.product-card, .product-panel')?.querySelector('.product-media, .hero-art') || btn).backgroundImage;
+  qvMedia.style.backgroundImage = getComputedStyle(btn.closest('.product-card, .product-panel')?.querySelector('.product-media, .hero-art') || btn).backgroundImage;
+  qvMedia.style.backgroundSize = 'cover';
+  qvMedia.style.backgroundPosition = 'center';
   qvAddToCart.dataset.name = btn.dataset.name;
   qvAddToCart.dataset.price = btn.dataset.price;
   quickViewLastFocus = document.activeElement;
